@@ -11,19 +11,19 @@ subtotal = 0
 
 special_menu = {
     
-        "SPECIAL BURGER WITH FRIES": 15.99,
-        "SPECIAL ICE CREAM WITH LARG COLA": 7.99,
-        "SURPRISE MENU": 18.99
+        "1": 15.99,
+        "2": 7.99,
+        "3": 18.99
         }
 
 
 regular_menu = {
         
-        "LARG FRIES": 3.99,
-        "LARG CHEESE BURGER": 5.99,
-        "LARG DOPPLE WOPPER ROYAL": 11.99,
-        "SALAD W/ ONIONS AND CHICKEN": 11.99,
-        "LAVA CAKE WITH ICE CREAM": 6.99
+        "1": 3.99,
+        "2": 5.99,
+        "3": 11.99,
+        "4": 11.99,
+        "5": 6.99
         }
 
 
@@ -99,9 +99,9 @@ while True:
         break
 
     # Check if the item is in the menu
-    if user_input_regular in  special_menu:
+    if special_menu_method in special_menu:
         # Add the price of the item to the subtotal
-        subtotal += special_menu[user_input_regular]
+        subtotal += special_menu[special_menu_method]
     else:
         print("Invalid item. Please try again.")
 
